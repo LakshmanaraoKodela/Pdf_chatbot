@@ -15,7 +15,6 @@ os.getenv("AIzaSyB4s-lEQaXGmyLZbI93rqmTbBoe0sQzOmI")
 genai.configure(api_key=os.getenv("AIzaSyB4s-lEQaXGmyLZbI93rqmTbBoe0sQzOmI"))
 
 
-
 def get_pdf_text(pdf_docs):
     text=""
     for pdf in pdf_docs:
