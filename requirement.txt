@@ -2,7 +2,8 @@ streamlit
 google-generativeai
 python-dotenv
 langchain
-PyPDF2~=3.0.1
+PyPDF2
+PdfReader
 chromadb
 faiss-cpu
 langchain_google_genai
