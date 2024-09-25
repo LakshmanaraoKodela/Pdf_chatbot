@@ -19,4 +19,5 @@ typing_extensions~=4.12.2
 build~=1.2.2
 zipp~=3.20.2
 langchain-google-genai~=2.0.0
+pdfplumber
 
