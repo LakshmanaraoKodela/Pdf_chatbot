@@ -1,5 +1,5 @@
 import streamlit as st
-from PyPDF2 import PdfReader
+import pdfplumber
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import os
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
@@ -9,7 +9,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
-
+pdfplumber
 # Load environment variables
 load_dotenv()
 
@@ -20,7 +20,7 @@ genai.configure(api_key=api_key)
 def get_pdf_text(pdf_docs):
     text = ""
     for pdf in pdf_docs:
-        pdf_reader = PdfReader(pdf)
+        pdf_reader = pdfplumber(pdf)
         for page in pdf_reader.pages:
             text += page.extract_text()
     return text
