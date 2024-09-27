@@ -1,10 +1,9 @@
 streamlit
-uuid
-PyPDF2~=3.0.1
+PyPDF2
 langchain
 langchain-google-genai
+faiss-cpu
 python-dotenv
 google-generativeai
 langdetect
 googletrans==4.0.0-rc1
-faiss-cpu
